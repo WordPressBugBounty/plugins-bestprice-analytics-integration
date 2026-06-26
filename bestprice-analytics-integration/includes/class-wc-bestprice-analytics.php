@@ -233,6 +233,8 @@ class WC_Bestprice_Analytics extends WC_Integration
 			(function (a, b, c, d, s) {a.__bp360 = c;a[c] = a[c] || function (){(a[c].q = a[c].q || []).push(arguments);};
 			s = b.createElement('script'); s.async = true; s.src = d; (b.body || b.head).appendChild(s);})
 			(window, document, 'bp', 'https://360.bestprice.gr/360.js');
+			window.bp.q = window.bp.q || [];
+			window.___360q = window.bp.q;
 			
 			bp('connect', '" . $this->ba_id . "');
 			bp('native', true);
@@ -251,6 +253,8 @@ class WC_Bestprice_Analytics extends WC_Integration
 			(function (a, b, c, d, s) {a.__bp360 = c;a[c] = a[c] || function (){(a[c].q = a[c].q || []).push(arguments);};
 			s = b.createElement('script'); s.async = true; s.src = d; (b.body || b.head).appendChild(s);})
 			(window, document, 'bp', 'https://360.bestprice.gr/360.js');
+			window.bp.q = window.bp.q || [];
+			window.___360q = window.bp.q;
 			
 			bp('connect', '" . $this->ba_id . "');
 			bp('native', true);

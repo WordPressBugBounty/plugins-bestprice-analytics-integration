@@ -4,9 +4,9 @@
  * Description: Allows BestPrice 360º tracking code to be inserted into WooCommerce store pages.
  * Author: BestPrice
  * Author URI: https://www.bestprice.gr
- * Version: 1.1.3
+ * Version: 1.1.4
  * WC requires at least: 3.8
- * WC tested up to: 8.8.2
+ * WC tested up to: 10.9.1
  * License: GPLv2 or later
  * Text Domain: ext-bestprice-analytics-integration
  * Domain Path: languages/
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WC_Bestprice_Analytics_Integration' ) ) {
 		 *
 		 * @var string
 		 */
-		const VERSION = '1.1.3';
+		const VERSION = '1.1.4';
 
 		/**
 		 * Instance of this class.
