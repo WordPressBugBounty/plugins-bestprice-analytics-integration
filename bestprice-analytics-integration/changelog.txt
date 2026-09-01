@@ -1,4 +1,8 @@
 *** Changelog ***
+= 1.1.5 =
+
+* Fix: Prevent fatal error on order received page when an ordered product has been deleted from the store.
+
 = 1.1.3 - 22/03/2024 =
 
 * Compatibility with php 8.2

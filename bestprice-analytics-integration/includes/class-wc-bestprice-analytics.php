@@ -316,7 +316,9 @@ class WC_Bestprice_Analytics extends WC_Integration
 
 		$product_id = "";
 
-		if ($this->ba_feed_id == "product_id") {
+		if ( ! $_product ) {
+			$_product_id = method_exists( $item, 'get_variation_id' ) && $item->get_variation_id() ? $item->get_variation_id() : ( method_exists( $item, 'get_product_id' ) ? $item->get_product_id() : '' );
+		} elseif ($this->ba_feed_id == "product_id") {
 			$_product_id = $_product->get_id();
 		} elseif ($this->ba_feed_id == "product_sku") {
 			$_product_id = $_product->get_sku() ? $_product->get_sku() : $_product->get_id();

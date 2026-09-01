@@ -3,12 +3,10 @@ Contributors: bestpricegr
 Tags: woocommerce, bestprice, analytics, 360
 Requires at least: 4.0.0
 Tested up to: 7.0
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 WC tested up to: 10.9.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
-Allows BestPrice 360º tracking code to be inserted into WooCommerce store pages.
 
 == Integrate Your Online Store with BestPrice.gr ==
 BestPrice.gr offers a straightforward integration for online retailers looking to connect their eshop with the #1 price comparison platform in Greece. 
@@ -44,6 +42,10 @@ Also please make sure your BestPrice Analytics ID under WooCommerce -> Settings 
 Duplicate BestPrice Analytics code causes a conflict in tracking. Remove any other BestPrice Analytics plugin or code from your site to avoid duplication and conflicts in tracking.
 
 == Changelog ==
+
+= 1.1.5 =
+
+* Fix: Prevent fatal error on order received page when an ordered product has been deleted from the store.
 
 = 1.1.3 - 22/03/2024 =
 
